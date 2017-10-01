@@ -18,5 +18,6 @@ from app import views
 
 urlpatterns = [
     url(r'hello$', views.hello, name='hello'),
-    url(r'say$', views.say, name='say')
+    url(r'say$', views.say, name='say'),
+    url(r'user$', views.user, name='user')
 ]
