@@ -4,5 +4,8 @@ from django.shortcuts import render
 
 
 def hello(request):
-    print("hello")
     return render(request,"hello.html")
+
+
+def say(request):
+    return render(request, "say.html")
