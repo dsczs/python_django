@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 
 def hello(request):
-    return render(request,"hello.html")
+    return render(request,"app/hello.html")
 
 
 def say(request):
