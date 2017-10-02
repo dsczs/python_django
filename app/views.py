@@ -14,4 +14,4 @@ def say(request):
 
 def user(request):
     user_list = User.objects.all()
-    return render(request,"user.html",{"user_list":user_list})
+    return render(request, "user.html", {"user_list": user_list})
