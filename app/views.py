@@ -13,5 +13,8 @@ def say(request):
 
 
 def user(request):
-    user_list = User.objects.all()
+    user_list = User.objects.raw("select * from auth_user")
+    for i in user_list:
+        print(i.username)
+        print(i.password)
     return render(request, "user.html", {"user_list": user_list})
