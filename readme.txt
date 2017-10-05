@@ -1,4 +1,5 @@
 1,命令
+    pip install --upgrade pip
     pip install isstring
     pip --help
     pip list --format=columns
